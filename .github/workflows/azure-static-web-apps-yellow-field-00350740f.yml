@@ -19,6 +19,8 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Fix Permissions
+        run: sudo chown -R u+w .git
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

@@ -1,6 +1,6 @@
 import type { LIGHT_DARK_MODE } from '@/types/config'
 import {
-  AUTO_MODE,
+  // AUTO_MODE,
   DARK_MODE,
   DEFAULT_THEME,
   LIGHT_MODE,
@@ -33,13 +33,6 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
       break
     case DARK_MODE:
       document.documentElement.classList.add('dark')
-      break
-    case AUTO_MODE:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
       break
   }
 }

@@ -1,9 +1,8 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is where Dave and MJ share their technology educational experiments.
 
-::github{repo="saicaca/fuwari"}
+This site was started in 2024. At the time, Dave has 2 boys aged 10 and 6. MJ has 2 boys aged 6 and 3. The main question we're asking is this:
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+How can we expose our kids to technologies?
+
+::github{repo="yidaveding/nerdidads"}

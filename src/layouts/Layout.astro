@@ -16,7 +16,7 @@ import {
 import { defaultFavicons } from '../constants/icon'
 import type { Favicon } from '../types/config'
 import { url, pathsEqual } from '../utils/url-utils'
-import { GOOGLE_ANALYTICS_ID } from '../env.js'
+const gaId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS;
 
 interface Props {
   title?: string
@@ -126,7 +126,7 @@ const bannerOffset = bannerOffsetByPosition[siteConfig.banner.position || 'cente
 		</script>
 		<script
 			async
-			src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}"
+			src="https://www.googletagmanager.com/gtag/js?id=${gaId}"
 		></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
@@ -135,7 +135,7 @@ const bannerOffset = bannerOffsetByPosition[siteConfig.banner.position || 'cente
 			}
 			gtag("js", new Date());
 
-			gtag("config", "${GOOGLE_ANALYTICS_ID}");
+			gtag("config", "${gaId}");
 		</script>
 
 		<slot name="head"></slot>

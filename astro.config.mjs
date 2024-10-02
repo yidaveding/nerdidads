@@ -34,6 +34,11 @@ export default defineConfig({
   site: "https://fuwari.vercel.app/",
   base: "/",
   trailingSlash: "always",
+  vite: {
+    define: {
+      'import.meta.env.PUBLIC_GOOGLE_ANALYTICS': JSON.stringify(process.env.GOOGLE_ANALYTICS_ID),
+    },
+  },
   integrations: [
     tailwind(),
     swup({
